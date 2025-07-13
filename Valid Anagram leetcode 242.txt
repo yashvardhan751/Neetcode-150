@@ -1,0 +1,15 @@
+Question :Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+			----------------Code -----------------------
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        s=s.toLowerCase();
+        t=t.toLowerCase();
+        char s1[]=s.toCharArray();
+        char s2[]=t.toCharArray();
+        Arrays.sort(s1);
+        Arrays.sort(s2);
+        return Arrays.equals(s1,s2);
+    }
+}
